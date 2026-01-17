@@ -20,15 +20,19 @@ function Login({ setIsAuthenticated }) {
     <div className='Login'>
       <h1>Login</h1>
       <form onSubmit={handleLogin}>
-        <input 
-          type="text" 
-          placeholder="Usuario" 
-          onChange={(e) => setUser(e.target.value)} 
+        <input
+          type="text"
+          className="login-input"
+          placeholder="Usuario"
+          value={user}
+          onChange={(e) => setUser(e.target.value.toLowerCase())}
         />
-        <input 
-          type="password" 
-          placeholder="Contraseña" 
-          onChange={(e) => setPass(e.target.value)} 
+        <input
+          type="password"
+          className="login-input"
+          placeholder="Contraseña"
+          value={pass}
+          onChange={(e) => setPass(e.target.value.toLowerCase())}
         />
         <button type="submit">Entrar</button>
       </form>

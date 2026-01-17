@@ -35,7 +35,7 @@ h1 {
   font-size: 2.5em;
   line-height: 1.1;
   text-align: center;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 1em 0;
 }
 
 .Login {
@@ -70,7 +70,7 @@ form {
 .cell {
   border-radius: 8px;
   border: 1px solid #444;
-  padding: 0.2em 0.6em;
+  padding: 0.4em 0.7em;
   font-size: 1em;
   font-weight: 500;
   background-color: #1a1a1a;
@@ -137,6 +137,23 @@ button:focus-visible {
   justify-content: center;
   gap: 1rem;
   margin-top: 2.5rem;
+}
+
+.login-input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  background-color: #1a1a1a;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  /* Para que el padding no ensanche el input */
+  outline: none;
+}
+
+.login-input:focus {
+  border-color: #646cff;
+  box-shadow: 0 0 5px rgba(100, 108, 255, 0.5);
 }
 
 @media (prefers-color-scheme: light) {
