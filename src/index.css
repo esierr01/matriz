@@ -35,7 +35,7 @@ h1 {
   font-size: 2.5em;
   line-height: 1.1;
   text-align: center;
-  margin: 0 0 1em 0;
+  margin: 0 0 0.5em 0;
 }
 
 .Login {
@@ -57,7 +57,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   gap: 10px;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 form {
@@ -106,6 +106,15 @@ form {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.leyenda {
+  border: 1px solid #444;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  margin-top: 2rem;
 }
 
 button {
