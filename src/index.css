@@ -70,7 +70,7 @@ form {
 .cell {
   border-radius: 8px;
   border: 1px solid #444;
-  padding: 0.4em 0.7em;
+  padding: 0.5em 0.8em;
   font-size: 1em;
   font-weight: 500;
   background-color: #1a1a1a;
@@ -82,21 +82,20 @@ form {
 .cell:focus,
 .cell:focus-visible {
   outline: none;
-  border: 1px solid #646cff;
+  border-color: #444;
 }
 
 .cell.active {
   border-color: #fd0202 !important;
-  background-color: #e0e40a;
+  background-color: #e0e40a !important;
   color: #fd0202;
   font-weight: bold;
 }
 
 .cell.active:hover {
-  border-color: #f7f6f0 !important;
-  background-color: #61e40a;
-  color: #130505;
-  font-weight: bold;
+  background-color: #e0e40a !important;
+  color: #fd0202 !important;
+  opacity: 0.8;
 }
 
 .grid {
@@ -136,11 +135,11 @@ button:focus-visible {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 2.5rem;
+  margin-top: 3.5rem;
 }
 
 .login-input {
-  padding: 10px 15px;
+  padding: 12px 17px;
   border-radius: 10px;
   border: 1px solid #444;
   background-color: #1a1a1a;
