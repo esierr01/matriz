@@ -65,14 +65,12 @@ h2 {
     align-items: center;
     width: 2.8rem;
     height: 2.8rem;
-    background-color: #59c710;
-    color: #000000 !important;
     font-weight: 600;
     border: none;
     border-radius: 0.2rem;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .selected {
@@ -83,14 +81,19 @@ h2 {
     background-color: #59c710;
 }
 
-.numberButton:hover {
-    transform: scale(1.1);
-    background-color: #45a00b;
+.numberButton:active {
+    transform: scale(0.9);
+    filter: brightness(0.8);
 }
 
-.numberButton:active {
-    background-color: #2e7d06;
-    transform: scale(0.95);
+.numberButton.unselected {
+    background-color: #59c710 !important;
+    color: #000000 !important;
+}
+
+.numberButton.selected {
+    background-color: #db201a !important;
+    color: #ffffff !important;
 }
 
 .buttonGroup {
@@ -188,6 +191,18 @@ h2 {
     .rightSection {
         padding: 15px;
         order: 1;
+    }
+}
+
+@media (hover: hover) {
+    .numberButton.unselected:hover {
+        background-color: #45a00b !important;
+        transform: scale(1.1);
+    }
+
+    .numberButton.selected:hover {
+        background-color: #b31a15 !important;
+        transform: scale(1.1);
     }
 }
 
